@@ -1,0 +1,16 @@
+header {
+    z-index: 1;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 17px;
+    background-color: #23252b;
+}
+
+.header svg {
+    height: 23px;
+    fill: #F47521;
+}
