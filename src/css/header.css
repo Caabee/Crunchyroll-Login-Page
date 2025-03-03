@@ -12,5 +12,10 @@ header {
 
 .header svg {
     height: 23px;
-    fill: #F47521;
+    fill: #ff640a;
+    transition: 0.3s ease;
+}
+
+.header svg:hover {
+    fill: #fff;
 }
