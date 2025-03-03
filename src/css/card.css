@@ -1,6 +1,6 @@
 .login-text h1 {
     font-weight: 500;
-margin-top: 150px;
+    margin-top: 150px;
 }
 
 .container {
@@ -14,7 +14,6 @@ margin-top: 150px;
 .card {
     background-color: #141519;
     padding: 0 50px 50px 40px;
-    border-radius: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -22,12 +21,99 @@ margin-top: 150px;
     gap: 25px;
 }
 
-.card p{
+.card p {
     font-weight: 300;
     font-size: 17px;
     width: 430px;
     text-align: center;
-    padding:  40px 0 0 0;
+    padding: 50px 0 10px 0;
+}
+
+.custom-field {
+    position: relative;
+    font-size: 14px;
+    padding-top: 20px;
+    margin-bottom: 5px;
+}
+
+.custom-field input {
+    color: #fff;
+    background-color: rgba(22, 22, 22, 0.4);
+    padding: 12px;
+    border-radius: 3px;
+    width: 430px;
+    height: 50px;
+    outline: none;
+    font-size: 14px;
+    ;
+}
+
+.custom-field .placeholder {
+    position: absolute;
+    left: 12px;
+    top: calc(50% + 10px);
+    transform: translateY(-50%);
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: 300;
+    transition:
+        top 0.3s ease,
+        font-size 0.3s ease,
+        color 0.3s ease;
+}
+
+.custom-field input:valid+.placeholder,
+.custom-field input:focus+.placeholder {
+
+    top: -1px;
+    font-size: 10px;
+
+}
+
+.custom-field.one input {
+    background: none;
+    border: 1px solid #8b8b8b;
+    transition: border-color 0.3s ease;
+}
+
+.custom-field.one input:valid,
+.custom-field.one input:focus {
+    border-color: #ff640a;
+    transition-delay: 0.1s;
+}
+
+.custom-field.one input+.placeholder {
+    padding: 0 5px;
+    left: 8px;
+}
+
+.custom-field.one input:valid+.placeholder,
+.custom-field.one input:focus+.placeholder {
+    top: 4px;
+    background: #141519;
+}
+
+.entratbtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border-color: #8b8b8b;
+    color: #8b8b8b;
+    height: 45px;
+    width: 150px;
+    border-radius: 4px;
+    font-size: 17px;
+    font-weight: 700;
+    cursor: pointer;
+    position: relative;
+    transition: 0.3s ease;
+}
+
+.entratbtn:hover {
+    color: #ff640a;
+    border-color: #ff640a;
+    transition: 0.5s ease;
 }
 
 .semconta a {
